@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+}
+
+.wrapper {
+    background-color: #222;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: rgb(92, 56, 56);
+    flex-basis: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        flex-basis: 30%;
+    }
+
+    &__banner {
+        flex-basis: 60%;
+        background-color: rgb(44, 28, 182);
+
+        &--quote {
+            font-size: 20px;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+.menu {
+    background-color: rgb(150, 137, 196);
+    flex-basis: 100%;
+
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__nav {
+        flex-basis: 10%;
+        background-color: rgb(41, 202, 63);
+        height: 70%;
+    }
+}
+
+.diet {
+    background-color: rgb(211, 40, 40);
+    flex-basis: 100%;
+
+
+
+
+    &__banner {
+        max-width: 1260px;
+        margin: 0 auto;
+        flex-basis: 100%;
+        display: flex;
+
+
+        &--txt {
+            flex-basis: 50%;
+        }
+
+        &--img {
+            flex-basis: 50%;
+        }
+
+    }
+}
+
+.meeting {
+    background-color: rgb(208, 211, 27);
+    flex-basis: 100%;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__info {
+        background-color: rgb(185, 102, 102);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        max-width: 1260px;
+        margin: 0 auto;
+
+        &__description {
+            flex-basis: 25%;
+        }
+
+        &__preparation {
+            flex-basis: 25%;
+        }
+
+        &__tests {
+            flex-basis: 25%;
+        }
+    }
+
+}
+
+.offer {
+    background-color: rgb(15, 189, 24);
+    flex-basis: 100%;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__description {
+        background-color: #222;
+        max-width: 1260px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__meals {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &--header {
+            flex-basis: 100%;
+            text-align: center;
+        }
+
+        &--img {
+            flex-basis: 100%;
+            overflow: hidden;
+            height: 30vh;
+
+
+            display: flex;
+
+
+
+            & .pics {
+                height: 100%;
+                transform: translateX(-6660px);
+                animation: meals 30s infinite linear both;
+                // margin: 0;
+            }
+        }
+    }
+}
+
+@keyframes meals {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-6660px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.pricelist {
+    background-color: rgb(29, 123, 167);
+    flex-basis: 100%;
+}
+
+.about {
+    background-color: rgb(59, 11, 148);
+    flex-basis: 100%;
+}
+
+.contact {
+    background-color: rgb(201, 37, 151);
+    flex-basis: 100%;
+}
+
+.footer {
+    background-color: rgb(78, 140, 199);
+}

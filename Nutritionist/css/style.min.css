@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+}
+
+.wrapper {
+  background-color: #222;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #5c3838;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  flex-basis: 30%;
+}
+
+.header__banner {
+  flex-basis: 60%;
+  background-color: #2c1cb6;
+}
+
+.header__banner--quote {
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.menu {
+  background-color: #9689c4;
+  flex-basis: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__nav {
+  flex-basis: 10%;
+  background-color: #29ca3f;
+  height: 70%;
+}
+
+.diet {
+  background-color: #d32828;
+  flex-basis: 100%;
+}
+
+.diet__banner {
+  max-width: 1260px;
+  margin: 0 auto;
+  flex-basis: 100%;
+  display: flex;
+}
+
+.diet__banner--txt {
+  flex-basis: 50%;
+}
+
+.diet__banner--img {
+  flex-basis: 50%;
+}
+
+.meeting {
+  background-color: #d0d31b;
+  flex-basis: 100%;
+}
+
+.meeting__header {
+  text-align: center;
+}
+
+.meeting__info {
+  background-color: #b96666;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.meeting__info__description {
+  flex-basis: 25%;
+}
+
+.meeting__info__preparation {
+  flex-basis: 25%;
+}
+
+.meeting__info__tests {
+  flex-basis: 25%;
+}
+
+.offer {
+  background-color: #0fbd18;
+  flex-basis: 100%;
+}
+
+.offer__header {
+  text-align: center;
+}
+
+.offer__description {
+  background-color: #222;
+  max-width: 1260px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.offer__meals {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.offer__meals--header {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.offer__meals--img {
+  flex-basis: 100%;
+  overflow: hidden;
+  height: 30vh;
+  display: flex;
+}
+
+.offer__meals--img .pics {
+  height: 100%;
+  transform: translateX(-6660px);
+  animation: meals 30s infinite linear both;
+}
+
+@keyframes meals {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-6660px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.pricelist {
+  background-color: #1d7ba7;
+  flex-basis: 100%;
+}
+
+.about {
+  background-color: #3b0b94;
+  flex-basis: 100%;
+}
+
+.contact {
+  background-color: #c92597;
+  flex-basis: 100%;
+}
+
+.footer {
+  background-color: #4e8cc7;
+}
+/*# sourceMappingURL=style.min.css.map */
