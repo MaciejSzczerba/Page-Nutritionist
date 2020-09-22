@@ -1,4 +1,82 @@
 * {
   margin: 0;
 }
+
+.wrapper {
+  background-color: #222;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #5c3838;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  flex-basis: 30%;
+}
+
+.header__banner {
+  flex-basis: 60%;
+  background-color: #2c1cb6;
+}
+
+.header__banner--quote {
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.menu {
+  background-color: #9689c4;
+  flex-basis: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__nav {
+  flex-basis: 10%;
+  background-color: #29ca3f;
+  height: 70%;
+}
+
+.diet {
+  background-color: #d32828;
+  flex-basis: 100%;
+}
+
+.meeting {
+  background-color: #d0d31b;
+  flex-basis: 100%;
+}
+
+.offer {
+  background-color: #0fbd18;
+  flex-basis: 100%;
+}
+
+.pricelist {
+  background-color: #1d7ba7;
+  flex-basis: 100%;
+}
+
+.about {
+  background-color: #3b0b94;
+  flex-basis: 100%;
+}
+
+.contact {
+  background-color: #c92597;
+  flex-basis: 100%;
+}
+
+.footer {
+  background-color: #4e8cc7;
+}
 /*# sourceMappingURL=style.min.css.map */
