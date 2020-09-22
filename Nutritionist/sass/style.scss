@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-    background-color: #222;
+
     width: 100%;
 
     display: flex;
@@ -11,33 +11,43 @@
 }
 
 .header {
-    background-color: rgb(92, 56, 56);
-    flex-basis: 100%;
 
+    flex-basis: 100%;
+    max-height: 20vh;
     display: flex;
     justify-content: space-between;
 
     &__logo {
-        flex-basis: 30%;
+        flex-basis: 20%;
     }
 
     &__banner {
-        flex-basis: 60%;
-        background-color: rgb(44, 28, 182);
+        flex-basis: 65%;
+        background-image: url(../img/banner1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         &--quote {
-            font-size: 20px;
-            align-items: center;
+            background-color: rgba(73, 25, 150, 0.7);
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+            line-height: 300%;
             text-align: center;
+            color: rgb(187, 185, 197);
         }
     }
 }
 
 .menu {
-    background-color: rgb(150, 137, 196);
+
     flex-basis: 100%;
 
-    height: 10vh;
+    height: 7vh;
 
     display: flex;
     justify-content: space-around;
@@ -45,8 +55,35 @@
 
     &__nav {
         flex-basis: 10%;
-        background-color: rgb(41, 202, 63);
+        background-color: rgb(46, 235, 21);
         height: 70%;
+        text-align: center;
+        border-radius: 8%;
+        border: 1px solid rgb(82, 218, 28);
+        box-shadow: 5px 5px 10px black;
+        transition: 0.5s;
+
+        &:hover {
+            box-shadow: 3px -3px 4px rgb(33, 21, 104);
+            background-color: rgb(33, 153, 17);
+
+
+            & .menu__nav--txt {
+                color: rgb(231, 19, 19);
+            }
+        }
+
+
+
+        &--txt {
+            position: relative;
+            text-transform: uppercase;
+            padding: 3px 5px;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 }
 
@@ -66,10 +103,30 @@
 
         &--txt {
             flex-basis: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // flex-wrap: wrap;
+
+            &--header {
+                width: 100%;
+            }
+
+            &--description {
+                width: 100%;
+            }
         }
 
         &--img {
             flex-basis: 50%;
+        }
+
+        &--dot {
+            flex-basis: 30%;
+            width: 20px;
+            height: 20px;
+            background-color: #222;
+            margin-top: 10px;
         }
 
     }
@@ -169,18 +226,103 @@
 .pricelist {
     background-color: rgb(29, 123, 167);
     flex-basis: 100%;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(120, 175, 30);
+    }
+
+    &__service {
+        width: 100%;
+        flex-basis: 100%;
+        max-width: 1260px;
+
+
+
+        display: flex;
+        justify-content: space-between;
+        margin: 10px auto;
+        background-color: rgb(209, 159, 159);
+
+        &--name {
+            background-color: rgb(214, 39, 39);
+            flex-basis: 30%;
+            text-align: center;
+        }
+
+        &--description {
+            flex-basis: 30%;
+            text-align: center;
+        }
+
+        &--price {
+            flex-basis: 30%;
+            text-align: center;
+            padding-right: 10px;
+        }
+    }
 }
 
 .about {
     background-color: rgb(59, 11, 148);
     flex-basis: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__header {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__description {
+        background-color: #fff;
+        flex-basis: 30%;
+        width: 30%;
+    }
 }
 
 .contact {
-    background-color: rgb(201, 37, 151);
+    background-color: rgb(43, 61, 20);
     flex-basis: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &__header {
+        text-align: center;
+        width: 100%;
+    }
+
+    &__posibility {
+        display: block;
+        width: 20%;
+        height: 20vh;
+
+
+        &--img {
+
+            width: 30%;
+            margin: 0 auto;
+        }
+
+        &--txt {
+            text-align: center;
+        }
+    }
+
 }
 
 .footer {
-    background-color: rgb(78, 140, 199);
+    background-color: rgb(1, 1, 2);
+    text-align: center;
+    color: white
 }
